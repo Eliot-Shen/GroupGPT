@@ -1,2 +1,0 @@
-# GroupGPT
-Coming soon!
