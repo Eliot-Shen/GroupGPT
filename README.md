@@ -42,11 +42,37 @@ pip install -r requirements.txt
 ### Models
 You can found `model weights` via HuggingFace: [🤗 EliotShen/qwen-3-4b-intervention](https://huggingface.co/EliotShen/qwen-3-4b-intervention) and [🤗 EliotShen/llama-3.2-3B-privacy](https://huggingface.co/EliotShen/llama-3.2-3B-privacy).
 
+### MUIR Dataset
+Due to privacy considerations, the MUIR dataset is not publicly downloadable.
+To request access, please fill out the application [form](https://docs.google.com/forms/d/e/1FAIpQLSd97FBs7sRq7jHNIcVDqI8sZyG52KGQ8tqmeYIGYkh1fDgLQA/viewform).
+
+After review, the dataset will be sent to your email address.
+
+### Data Curation
+The `data_curate.py` script demonstrates our data curation pipeline for constructing training data.
+
+- You need to replace the LLM interface in the script with your own API.
+- Convert raw multi-user chat logs into JSON format as input.
+- The pipeline will automatically process the data and generate the final training dataset.
+
+
 ### Training
+We provide training scripts for the key components of GroupGPT:
 
+- **Intervention Judge Model**
 
+  This model determines whether and when the system should intervene in multi-user conversations.
 
-### Evaluation
+  ```bash
+  sh train.sh
+  ```
+- **Privacy Transcriber Model**
+  This module is responsible for privacy-aware rewriting of user inputs.
+  ```bash
+  sh privacy_train.sh
+  ```
+
+Make sure to properly configure the dataset paths and training hyperparameters before running the scripts.
 
 
 
