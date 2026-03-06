@@ -26,8 +26,10 @@
 
 - [Install](#install)
 - [Models](#models)
-- [Training](#Training)
-- [Evaluation](#Evaluation)
+- [MUIR Dataset](#muir-dataset)
+- [Data Curation](#data-curation)
+- [Training](#training)
+
 
 ### Install
 
