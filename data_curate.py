@@ -39,7 +39,7 @@ def generate_interventions_with_sliding_window(
                 "id": msg["id"]
             })
 
-            # 插入历史 intervention
+            # insert historical intervention
             for intervention in all_interventions:
                 if intervention["id"] == msg["id"]:
                     simplified_conversation.append({
@@ -97,7 +97,6 @@ def generate_interventions_with_sliding_window(
 
         start_idx += max(1, window_size - overlap)
 
-        # 实时保存
         with open(output_json_path, "w", encoding="utf-8") as f:
             json.dump({"conversation": output_conversation}, f, ensure_ascii=False, indent=2)
 
