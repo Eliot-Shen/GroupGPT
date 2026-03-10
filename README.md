@@ -29,6 +29,7 @@
 - [MUIR Dataset](#muir-dataset)
 - [Data Curation](#data-curation)
 - [Training](#training)
+- [Inference](#inference)
 
 
 ### Install
@@ -75,6 +76,62 @@ We provide training scripts for the key components of GroupGPT:
   ```
 
 Make sure to properly configure the dataset paths and training hyperparameters before running the scripts.
+
+## Inference
+
+### Intervention Judge Model
+
+The **Intervention Judge Model** determines whether the system should intervene in a multi-user group chat and identifies the most appropriate intervention reason.
+
+
+### Input Format
+
+The model expects a **JSON-formatted group chat context** as input.
+
+Example:
+
+```json
+[
+  {
+    ...
+  },
+  {
+    "user": "Alice",
+    "message": "I studied for the exam all night and still feel like I failed..."
+  },
+  {
+    "Intervention": "Emotional Support",
+    "Reason": "Users are expressing frustration about the exam."
+  },
+  {
+    "user": "Bob",
+    "message": "Same here, that test was brutal."
+  },
+  {
+    "user": "Charlie",
+    "message": "Yeah the questions were way harder than the homework."
+  }
+]
+```
+This JSON context is inserted into the prompt and sent to the model.
+
+### Output Format
+
+The model outputs a JSON decision indicating whether an intervention is needed.
+
+Example:
+```json
+{
+  "choice": "Emotional Support",
+  "reason": "Multiple users express frustration and discouragement about the exam."
+}
+```
+If no intervention is necessary:
+```json
+{
+  "choice": "Stay Silent"
+}
+```
 
 
 
