@@ -16,8 +16,10 @@
 - 🔥We have released the weights for GroupGPT’s components.
 - 🔥We have released **GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant**. Check out the [paper](https://arxiv.org/abs/2603.01059).
 
+<img src="./imgs/intro.jpeg" alt="GroupGPT" width="600"/> 
+
 ## Overall Framework
-|                              <img src="./imgs/framework.png" alt="GroupGPT" width="400"/>                            |
+|                              <img src="./imgs/framework.png" alt="GroupGPT" width="800"/>                            |
 | :------------------------------------------------------------------------------------------------------------------: |
 | GroupGPT adopts a small–large model collaborative architecture to decouple intervention timing from response generation, enabling efficient and accurate decision-making. |
 
