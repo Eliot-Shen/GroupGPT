@@ -142,7 +142,7 @@ If no intervention is necessary:
 ```
 @article{shen2026groupgpt,
       title={GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant}, 
-      author={Zhuokang Shen and Yifan Wang and Hanyu Chen and Wenxuan Huang and Shaohui Lin},
+      author={Zhuokang Shen and Yifan Wang and Hanyu Chen and Wenxuan Huang and Yunhang Shen and Shaohui Lin},
       year={2026},
       journal={arXiv preprint arXiv:2603.01059}
 }
