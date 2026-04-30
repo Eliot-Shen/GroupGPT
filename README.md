@@ -141,9 +141,9 @@ If no intervention is necessary:
 
 ```
 @article{shen2026groupgpt,
-      title={GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant}, 
-      author={Zhuokang Shen and Yifan Wang and Hanyu Chen and Wenxuan Huang and Yunhang Shen and Shaohui Lin},
-      year={2026},
-      journal={arXiv preprint arXiv:2603.01059}
+  title={GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant},
+  author={Shen, Zhuokang and Wang, Yifan and Chen, Hanyu and Shen, Yunhang and Huang, Wenxuan and He, Gaoqi and Xie, Jiao and Ji, Rongrong and Lin, Shaohui},
+  journal={arXiv preprint arXiv:2603.01059},
+  year={2026}
 }
 ```
